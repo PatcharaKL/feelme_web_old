@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import './App.css';
+import { Counter } from './components/Counter';
 
 function App() {
   const [data, setData] = useState<any>();
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>{JSON.stringify(data)}</h1>
+      <Counter />
     </div>
   );
 }
